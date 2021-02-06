@@ -627,8 +627,12 @@ body {
         width: 100%;
         display: block; } }
   .popup__image {
-    display: inline-block;
-    max-width: 40%; }
+    display: block;
+    max-width: 100%; }
+    @media (max-width: calc(900em / 16)) {
+      .popup__image {
+        display: inline-block;
+        max-width: 40%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
